@@ -1,0 +1,19 @@
+{
+  "name": "itspdf.com-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "allure-commandline": "^2.43.0",
+    "allure-cypress": "^3.10.0",
+    "cypress": "^15.17.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  }
+}
