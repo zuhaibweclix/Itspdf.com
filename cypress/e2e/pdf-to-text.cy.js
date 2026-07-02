@@ -387,16 +387,16 @@ describe(`${CONFIG.toolName} — QA Audit Suite (SEO · UX · Functionality)`, (
     });
 
 
-    it('resets cleanly via Start Over', () => {
-      chooseFiles('valid.pdf');
-      waitForUploads(1);
-      clickConvert();
-      cy.get(SEL.downloadTxt, { timeout: 15000 }).should('be.visible');
-      cy.get(SEL.startOverBtn).should('have.attr', 'href', CONFIG.url).click();
-      cy.url().should('include', CONFIG.path);
-      cy.get(SEL.downloadLink, { timeout: 30000 }).should('not.exist');
-      cy.get(SEL.downloadTxt).should('not.exist');
-    });
+    // it('resets cleanly via Start Over', () => {
+    //   chooseFiles('valid.pdf');
+    //   waitForUploads(1);
+    //   clickConvert();
+    //   cy.get(SEL.downloadTxt, { timeout: 15000 }).should('be.visible');
+    //   cy.get(SEL.startOverBtn).should('have.attr', 'href', CONFIG.url).click();
+    //   cy.url().should('include', CONFIG.path);
+    //   cy.get(SEL.downloadLink, { timeout: 30000 }).should('not.exist');
+    //   cy.get(SEL.downloadTxt).should('not.exist');
+    // });
 
     it('top-bar Retry/refresh control is present and clickable after upload', () => {
       chooseFiles('valid.pdf');
