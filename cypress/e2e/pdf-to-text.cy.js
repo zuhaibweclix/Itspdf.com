@@ -265,7 +265,7 @@ describe(`${CONFIG.toolName} — QA Audit Suite (SEO · UX · Functionality)`, (
     });
 
     it('rejects a file larger than 50 MB with the size toast', () => {
-      chooseFiles('large.pdf');
+      chooseFiles('large50mb.pdf');
       expectToast(TOAST.size);
     });
 
